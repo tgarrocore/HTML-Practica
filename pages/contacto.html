@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Mi Perfil</title>
+    <link rel="icon" type="image/svg+xml" href="../images/code-solid-full.svg">
+</head>
+<body>
+
+    <header>
+        <h1>Contacto</h1>
+    </header>
+
+    <main>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="motivo">Motivo de contacto:</label>
+            <select id="motivo" name="motivo" required>
+                <option value="" disabled selected>Seleccione una opción</option>
+                <option value="consulta">Consulta</option>
+                <option value="laboral">Propuesta Laboral</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <fieldset>
+
+                <legend>Tecnologías de interés</legend>
+                
+                <input type="checkbox" id="python" name="tecnologias" value="python">
+                <label for="python">Python</label>
+                
+                <input type="checkbox" id="cpp" name="tecnologias" value="cpp">
+                <label for="cpp">C++</label>
+                
+                <input type="checkbox" id="html" name="tecnologias" value="html">
+                <label for="html">HTML</label>
+                
+                <input type="checkbox" id="git" name="tecnologias" value="git">
+                <label for="git">Git</label>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Nivel de prioridad</legend>
+
+                <input type="radio" id="alta" name="prioridad" value="alta" required>
+                <label for="alta">Alta</label>
+
+                <input type="radio" id="media" name="prioridad" value="media">
+                <label for="media">Media</label>
+
+                <input type="radio" id="baja" name="prioridad" value="baja">
+                <label for="baja">Baja</label>
+
+            </fieldset>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" maxlength="500" required></textarea>
+
+            <input type="checkbox" id="consentimiento" name="consentimiento" value="si" required>
+            <label for="consentimiento">Acepto ser contactado</label>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <a href="../index.html">&larr; Volver al perfil</a>
+    </main>
+
+    <footer>&copy; 2026 Mi Perfil. Todos los derechos reservados</footer>
+</body>
+</html>
